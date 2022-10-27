@@ -6,7 +6,7 @@ let greetingAlert = true;
 
 function bigger() {
     if(greetingAlert) {
-        alert("Hello, world!");
+        alert("Hello, world! (one time alert)");
         greetingAlert=false;
     }
     TXT.style.fontSize = "24pt";
@@ -19,7 +19,7 @@ function resetStyle() {
 };
 function fancify() {
     if(fancyAlert) {
-        alert('FANCIFY!');
+        alert('FANCIFY! (one time alert)');
         fancyAlert=false;
     }
     TXT.style.fontWeight = 'bold';
