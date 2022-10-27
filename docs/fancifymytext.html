@@ -2,19 +2,28 @@
 <html>
 	<head>
 		<title>Fancify Shamcify</title>
-
-		<!-- link to your script file here -->
-		<script src="fancifymytext.js"></script>
 	</head>
 
 	<body>
 		<h1>Fancify my Text</h1>
 		<fieldset>
-			<label for="input">Text</label>
+			<legend>Text</legend>
 			<textarea id="text" rows="4" cols="30">
-				Please enter your input...
+				Enter your input...
 			</textarea>
 		</fieldset>
 		<!-- Your UI controls go here -->
+		<fieldset>
+			<form>
+				<button type="button" id="hello" onclick="bigger()">Bigger!</button>
+				<input type="radio" id="fancy" value = "fancy"onchange="radioFunc(this)">
+				<label for="fancy">FancyShmancy</label>
+				<input type="radio" id="boring" value = "boring" onchange="radioFunc(this)">
+				<label for="boring">BoringBetty</label>
+				<button type="button" id="moo">Moo</button>
+			</form>
+		</fieldset>
+		<!-- link to your script file here -->
+		<script src="fancifymytext.js"></script>
 	</body>
 </html>
