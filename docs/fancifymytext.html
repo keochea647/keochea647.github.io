@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Fancify Shamcify</title>
+		<!-- link to your script file here -->
+		<script type ="text/javascript" src="fancifymytext.js"></script>
 	</head>
 
 	<body>
@@ -17,14 +19,12 @@
 		<fieldset>
 			<form>
 				<button type="button" id="hello" onclick="bigger()">Bigger!</button>
-				<input type="radio" id="fancy" value = "fancy" onchange="radioFunc(this)">
+				<input type="radio" name="radioBtn" id="fancy" onchange="radioFunc(this)">
 				<label for="fancy">FancyShmancy</label>
-				<input type="radio" id="boring" value = "boring" onchange="radioFunc(this)">
+				<input type="radio" name="radioBtn" id="boring" onchange="radioFunc(this)">
 				<label for="boring">BoringBetty</label>
-				<button type="button" id="moo">Moo</button>
+				<button type="button" id="moo" onclick="mooFunc()">Moo</button>
 			</form>
 		</fieldset>
-		<!-- link to your script file here -->
-		<script src="fancifymytext.js"></script>
 	</body>
 </html>
