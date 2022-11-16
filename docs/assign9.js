@@ -9,6 +9,8 @@ const DONE = document.createElement("img");
 DONE.src="https://media.tenor.com/uCBhZENaMOoAAAAM/hamster-cute.gif";
 DONE.id='done';
 
+const MAX_AGE = 125;
+
 (function() {
     "use strict";
   
@@ -46,7 +48,7 @@ DONE.id='done';
           window.localStorage.setItem("last",last.value);
         if(colorMode.value)
           window.localStorage.setItem("color-mode",colorMode.value);
-        if(!isNaN(age.value) && age.value > 0 && age.value < 125) {
+        if(!isNaN(age.value) && age.value > 0 && age.value < MAX_AGE) {
           window.localStorage.setItem("age",age.value);
         }
         getPage();
