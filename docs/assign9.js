@@ -31,7 +31,7 @@ const MAX_AGE = 125;
       let updateBtn = document.getElementById("update");
       clearBtn.addEventListener("click",clear,false);
       updateBtn.addEventListener("click",updatePreferences,false);
-      getPage();
+      setPage();
     }
   
     // Add any other functions in this area (you should not implement your
@@ -51,7 +51,7 @@ const MAX_AGE = 125;
         if(!isNaN(age.value) && age.value > 0 && age.value < MAX_AGE) {
           window.localStorage.setItem("age",age.value);
         }
-        getPage();
+        setPage();
     }
     function clear() {
         // clears local storage
@@ -69,9 +69,9 @@ const MAX_AGE = 125;
             break;
           }
         }
-        getPage();
+        setPage();
     }
-    function getPage() {
+    function setPage() {
       let first = window.localStorage.getItem("first");
       let last = window.localStorage.getItem("last");
       let age = window.localStorage.getItem("age");
